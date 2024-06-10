@@ -1,0 +1,12 @@
+[submodule "services"]
+	path = services
+	url = https://github.com/Le-Duo/AirneisServices.git
+	branch = develop
+[submodule "webapp"]
+	path = webapp
+	url = https://github.com/Le-Duo/AirneisWebApp.git
+	branch = develop
+[submodule "AirneisMobileApp"]
+	path = AirneisMobileApp
+	url = https://github.com/Le-Duo/AirneisMobileApp.git
+	branch = react-native-test
