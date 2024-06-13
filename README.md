@@ -1,3 +1,14 @@
+# Airneis - Configuration pour démonstration
+
+Installez mongodb Community Server avec MongoDB Compass (inclus dans l'installateur) 
+* https://www.mongodb.com/try/download/community
+
+Installez le module mongodb avec `npm install mongodb`.
+
+Placez vous à la racine de ce projet et executez le script `import_data_demo.js` avec la commande `node import_data_demo.js`
+
+Vérifiez que les données sont bien intégrées avec MongoDB Compass
+
 # Airneis-project submodules
 
 # Mettre à jour les sous-modules dans le  dépôt principal
