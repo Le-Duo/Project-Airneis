@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { MongoClient } = require('mongodb');
+const { MongoClient, ObjectId } = require('mongodb');
 
 // URL de connexion à la base de données MongoDB locale
 const url = 'mongodb://localhost:27017';
@@ -11,9 +11,25 @@ const dbName = 'Airneis';
 // Nom du répertoire contenant les fichiers JSON
 const directoryPath = path.join(__dirname, 'dataDbDemo');
 
+// Fonction pour convertir les champs spéciaux MongoDB
+function convertSpecialFields(obj) {
+  for (const key in obj) {
+    if (obj[key] && typeof obj[key] === 'object') {
+      if (obj[key].$oid) {
+        obj[key] = new ObjectId(obj[key].$oid);
+      } else if (obj[key].$date) {
+        obj[key] = new Date(obj[key].$date);
+      } else {
+        convertSpecialFields(obj[key]);
+      }
+    }
+  }
+  return obj;
+}
+
 // Fonction pour importer les fichiers JSON dans MongoDB
 async function importJsonFiles(directoryPath, dbName) {
-  const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
+  const client = new MongoClient(url, { useUnifiedTopology: true });
 
   try {
     await client.connect();
@@ -37,17 +53,16 @@ async function importJsonFiles(directoryPath, dbName) {
           }
 
           try {
-            const jsonData = JSON.parse(data);
-            const collectionName = path.basename(file, path.extname(file));
-            const collection = db.collection(collectionName);
-
+            let jsonData = JSON.parse(data);
             if (Array.isArray(jsonData)) {
-              await collection.insertMany(jsonData);
+              jsonData = jsonData.map(convertSpecialFields);
+              await db.collection(path.basename(file, path.extname(file))).insertMany(jsonData);
             } else {
-              await collection.insertOne(jsonData);
+              jsonData = convertSpecialFields(jsonData);
+              await db.collection(path.basename(file, path.extname(file))).insertOne(jsonData);
             }
 
-            console.log(`Données importées dans la collection "${collectionName}" avec succès.`);
+            console.log(`Données importées dans la collection "${path.basename(file, path.extname(file))}" avec succès.`);
           } catch (err) {
             console.error('Erreur lors de l\'insertion des données:', err);
           }
@@ -57,7 +72,12 @@ async function importJsonFiles(directoryPath, dbName) {
   } catch (err) {
     console.error('Erreur lors de la connexion à MongoDB:', err);
   } finally {
-    await client.close();
+    if (client.isConnected) {
+      await client.close();
+      console.log('Connexion à MongoDB fermée.');
+    } else {
+      console.log('MongoDB client n\'est pas connecté.');
+    }
   }
 }
 

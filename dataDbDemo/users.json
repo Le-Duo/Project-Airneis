@@ -1,0 +1,360 @@
+[{
+  "_id": "65b2de45860c1db56605434d",
+  "name": "Admin User",
+  "email": "admin@example.com",
+  "phoneNumber": "555-1234",
+  "password": "$2a$10$kytyzr3KvnJ5wxZz3KyleuMmc8ijJ9Kkw9eb2/TniRuIE5IoRI8G2",
+  "isAdmin": true,
+  "addresses": [
+    {
+      "street": "123 Main St",
+      "city": "Anytown",
+      "postalCode": "12345",
+      "country": "United Kingdom",
+      "isDefault": true,
+      "_id": {
+        "$oid": "66632f77f19fe22dd476b1e2"
+      }
+    },
+    {
+      "street": "79 Northgate Street",
+      "city": "BICKTON",
+      "postalCode": "SP6 6GN",
+      "country": "United Kingdom",
+      "isDefault": false,
+      "_id": {
+        "$oid": "6665a10a46d558f814c4b90a"
+      }
+    }
+  ],
+  "paymentCards": [
+    {
+      "bankName": "Visa",
+      "number": "1234 5678 1234 5678",
+      "fullName": "John Doe",
+      "monthExpiration": 12,
+      "yearExpiration": 2023,
+      "isDefault": true,
+      "_id": {
+        "$oid": "66632f77f19fe22dd476b1e3"
+      }
+    },
+    {
+      "bankName": "Mastercard",
+      "number": "1234 5678 1234 5678",
+      "fullName": "Jane Doe",
+      "monthExpiration": 12,
+      "yearExpiration": 2023,
+      "isDefault": false,
+      "_id": {
+        "$oid": "66632f77f19fe22dd476b1e4"
+      }
+    },
+    {
+      "bankName": "ma banque",
+      "number": "0650660460460465",
+      "fullName": "Fergus Gray",
+      "monthExpiration": 12,
+      "yearExpiration": 2025,
+      "isDefault": false,
+      "_id": {
+        "$oid": "6665a12546d558f814c4b91d"
+      }
+    }
+  ],
+  "__v": 2,
+  "createdAt": {
+    "$date": "2024-06-07T16:04:07.954Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-09T12:33:41.159Z"
+  },
+  "passwordResetTokenJti": "1717776248692"
+},
+{
+  "_id": {
+    "$oid": "66632f77f19fe22dd476b1f2"
+  },
+  "name": "User Two",
+  "email": "usertwo@example.com",
+  "phoneNumber": "555-6789",
+  "password": "$2a$10$bFdg44JU/MBGFfVRMQon8e13h.7VeNw8Lsm8Q0pLO7AcI4yTOajfa",
+  "isAdmin": false,
+  "addresses": [
+    {
+      "street": "123 Main St",
+      "city": "Anytown",
+      "postalCode": "12345",
+      "country": "United Kingdom",
+      "isDefault": true,
+      "_id": {
+        "$oid": "66632f77f19fe22dd476b1e8"
+      }
+    }
+  ],
+  "paymentCards": [
+    {
+      "bankName": "Visa",
+      "number": "1234 5678 1234 5678",
+      "fullName": "John Doe",
+      "monthExpiration": 12,
+      "yearExpiration": 2023,
+      "isDefault": true,
+      "_id": {
+        "$oid": "66632f77f19fe22dd476b1e9"
+      }
+    },
+    {
+      "bankName": "Mastercard",
+      "number": "1234 5678 1234 5678",
+      "fullName": "Jane Doe",
+      "monthExpiration": 12,
+      "yearExpiration": 2023,
+      "isDefault": false,
+      "_id": {
+        "$oid": "66632f77f19fe22dd476b1ea"
+      }
+    }
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-06-07T16:04:07.954Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-07T16:04:07.954Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66632f77f19fe22dd476b1f1"
+  },
+  "name": "User One",
+  "email": "userone@example.com",
+  "phoneNumber": "555-5678",
+  "password": "$2a$10$rsNf6racKwUR8EHittvcju0oSdSYEUR272wOKF182ik9oz.KFVNAy",
+  "isAdmin": false,
+  "addresses": [
+    {
+      "street": "123 Main St",
+      "city": "Anytown",
+      "postalCode": "12345",
+      "country": "United Kingdom",
+      "isDefault": true,
+      "_id": {
+        "$oid": "66632f77f19fe22dd476b1e5"
+      }
+    }
+  ],
+  "paymentCards": [
+    {
+      "bankName": "Visa",
+      "number": "1234 5678 1234 5678",
+      "fullName": "John Doe",
+      "monthExpiration": 12,
+      "yearExpiration": 2023,
+      "isDefault": true,
+      "_id": {
+        "$oid": "66632f77f19fe22dd476b1e6"
+      }
+    },
+    {
+      "bankName": "Mastercard",
+      "number": "1234 5678 1234 5678",
+      "fullName": "Jane Doe",
+      "monthExpiration": 12,
+      "yearExpiration": 2023,
+      "isDefault": false,
+      "_id": {
+        "$oid": "66632f77f19fe22dd476b1e7"
+      }
+    }
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-06-07T16:04:07.954Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-07T16:04:07.954Z"
+  }
+},
+{
+  "_id": "6af9b1768cca374cbd3a8eae",
+  "name": "Madyson Abshire",
+  "email": "Madyson.Abshire@hotmail.com",
+  "phoneNumber": "+44 166 240 1816",
+  "password": "$2b$10$hI4gVOQFNQf35/ZZX.XVmesEKWVE4/PeS73zyH8REL1PNOBXD14xy",
+  "isAdmin": false,
+  "addresses": [
+    {
+      "street": "353 Purdy Terrace",
+      "city": "East Grace",
+      "postalCode": "E11 O47I",
+      "country": "United Kingdom",
+      "isDefault": false,
+      "_id": {
+        "$oid": "66632f77f19fe22dd476b1eb"
+      }
+    }
+  ],
+  "paymentCards": [
+    {
+      "bankName": "Mastercard",
+      "number": "4052099095655805",
+      "fullName": "Madyson Abshire",
+      "monthExpiration": 6,
+      "yearExpiration": 2027,
+      "isDefault": false,
+      "_id": {
+        "$oid": "66632f77f19fe22dd476b1ec"
+      }
+    }
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-06-07T16:04:07.954Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-07T16:04:07.954Z"
+  }
+},
+{
+  "_id": "ca04e7ea9bea36ec3d32dff0",
+  "name": "Tyson Wisoky",
+  "email": "Tyson_Wisoky23@hotmail.com",
+  "phoneNumber": "+44 6248 283 278",
+  "password": "$2b$10$OjgJQB9LkKdv14r01TulJejoT83xRWmOHwAmMeXNk/3jmEL09dmme",
+  "isAdmin": false,
+  "addresses": [
+    {
+      "street": "75339 Wisoky Parkway",
+      "city": "Corbinhaven",
+      "postalCode": "V79 78SU",
+      "country": "United Kingdom",
+      "isDefault": false,
+      "_id": {
+        "$oid": "66632f77f19fe22dd476b1ed"
+      }
+    },
+    {
+      "street": "1101 Harvey Corner",
+      "city": "New Nathan",
+      "postalCode": "H94 R90Q",
+      "country": "United Kingdom",
+      "isDefault": false,
+      "_id": {
+        "$oid": "66632f77f19fe22dd476b1ee"
+      }
+    }
+  ],
+  "paymentCards": [
+    {
+      "bankName": "Visa",
+      "number": "4482505931025275",
+      "fullName": "Tyson Wisoky",
+      "monthExpiration": 5,
+      "yearExpiration": 2029,
+      "isDefault": false,
+      "_id": {
+        "$oid": "66632f77f19fe22dd476b1ef"
+      }
+    }
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2024-06-07T16:04:07.954Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-07T16:04:07.954Z"
+  }
+},
+{
+  "_id": "66659fad46d558f814c4b8d0",
+  "name": "sofiane",
+  "email": "sofiane57800ben@gmail.com",
+  "phoneNumber": "",
+  "password": "$2a$10$mYRjDrMc4k/VUv/JT5TtiudT9RSz5kObFaSlMCbz3wuAmoqfWuX.u",
+  "isAdmin": false,
+  "addresses": [],
+  "paymentCards": [],
+  "createdAt": {
+    "$date": "2024-06-09T12:27:25.386Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-09T12:27:25.386Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "665884da87580b29b74dfdff",
+  "name": "Jennifer Toussaint",
+  "email": "toussaint.jennifer@gmail.com",
+  "phoneNumber": "0673959042",
+  "password": "$2a$10$znGuKsse8ZQskDTl/0ucMutuzEt.5bw4KVSpFjdEhz0SYDMj21r.W",
+  "isAdmin": true,
+  "addresses": [
+    {
+      "street": "9 rue vaudeville",
+      "city": "Auboué",
+      "postalCode": "54580",
+      "country": "France",
+      "isDefault": true,
+      "_id": {
+        "$oid": "6665b2e7421ad65333d67bb0"
+      }
+    }
+  ],
+  "paymentCards": [
+    {
+      "bankName": "Crédit mutuel",
+      "number": "1234567654321234",
+      "fullName": "TOUSSAINT JENNIFER",
+      "monthExpiration": 6,
+      "yearExpiration": 2027,
+      "isDefault": true,
+      "_id": {
+        "$oid": "6665b2b6421ad65333d67b7f"
+      }
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-06-09T13:41:59.436Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-09T13:51:30.167Z"
+  },
+  "__v": 2
+},
+{
+  "_id": "6665e469b31f43bfa7b2bf1d",
+  "name": "Jenny2",
+  "email": "toussaint2.jennifer@gmail.com",
+  "phoneNumber": "",
+  "password": "$2a$10$WUIOOx5CdsPDcYv2piE2CevF9rWBWwsWuCjiDAIDiAXp0faXhtSt.",
+  "isAdmin": false,
+  "addresses": [],
+  "paymentCards": [],
+  "createdAt": {
+    "$date": "2024-06-09T17:20:41.106Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-09T17:20:41.106Z"
+  },
+  "__v": 0
+},
+{
+  "_id": "6665e49cb31f43bfa7b2bf38",
+  "name": "Jenny3",
+  "email": "toussaint3.jennifer@gmail.com",
+  "phoneNumber": "",
+  "password": "$2a$10$FQy45SFiBckhdvkvGgm3POVdrWsFpFiewDx0YTH8lOlFiNc4RfhVu",
+  "isAdmin": false,
+  "addresses": [],
+  "paymentCards": [],
+  "createdAt": {
+    "$date": "2024-06-09T17:21:32.118Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-09T17:21:32.118Z"
+  },
+  "__v": 0
+}]
