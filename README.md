@@ -9,6 +9,10 @@ Placez vous à la racine de ce projet et executez le script `import_data_demo.js
 
 Vérifiez que les données sont bien intégrées avec MongoDB Compass
 
+Connexion de démonstration admin:
+* user: admin@exemple.com
+* password: password
+
 # Airneis-project submodules
 
 # Mettre à jour les sous-modules dans le  dépôt principal
