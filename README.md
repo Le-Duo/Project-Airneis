@@ -17,22 +17,22 @@ Connexion de démonstration admin:
 
 # Mettre à jour les sous-modules dans le  dépôt principal
 
-Pour mettre à jour les sous-modules `services`, `webapp`, et `mobile` avec les derniers changements sur leurs branches `develop` ou `react-native-test` dans le cas de mobile, suivez ces étapes :
+Pour mettre à jour les sous-modules `services`, `webapp`, et `AirneisMobileApp` avec les derniers changements sur leurs branches `develop` ou `react-native-test` dans le cas de mobile, suivez ces étapes :
 
 ## Prérequis
 
 ### Se placer dans le dépôt principal
 
-* `cd Airneis-project`
+* `cd Project-Airneis`
 
 ### Executer ces commandes
 
 * `git submodule update --remote services`
 * `git submodule update --remote webapp`
-* `git submodule update --remote mobile`
+* `git submodule update --remote AirneisMobileApp`
 
 ### Commit les changements suite à la mise à jour
 
-* `git add services webapp mobile`
-* `git commit -m "Mise à jour des sous-modules services, webapp, et mobile"`
+* `git add services webapp AirneisMobileApp`
+* `git commit -m "Mise à jour des sous-modules services, webapp, et AirneisMobileApp"`
 * `git push`
